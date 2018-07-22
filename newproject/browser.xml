@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite" thread-count="4" parallel="true" >
+
+	
+	<test name="FirefoxTest">
+		<parameter name="browser" value="fireFox" />
+		<classes>
+			<class name="newpackage.MyClass">
+			</class>
+		</classes>
+	</test>	
+
+	<test name="ChromeTest">
+			<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="newpackage.MyClass">
+			</class>
+		</classes>
+	</test>
+	
+
+	<test name="EdgeTest">
+			<parameter name="browser" value="Edge" />
+			
+		<classes>
+			<class name="newpackage.MyClass">
+			</class>
+		</classes>
+
+	</test>
+	
+	<test name="IETest">
+			<parameter name="browser" value="IE" />
+			
+		<classes>
+			<class name="newpackage.MyClass">
+			</class>
+		</classes>
+
+	</test>
+
+</suite>
